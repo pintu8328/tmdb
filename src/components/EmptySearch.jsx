@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Image, Flex, Heading } from "@chakra-ui/react";
-import Skeleton from "./Skeleton";
 
 const EmptySearch = ({ searchKeyword }) => {
   return (
@@ -24,9 +23,6 @@ const EmptySearch = ({ searchKeyword }) => {
         <Heading as="h6" size="xs" color={"white"}>
           Try searching for something else or try with a different spelling
         </Heading>
-
-        {/* Skeleton loading effect (you may want to replace this with actual content) */}
-        <Skeleton />
       </Box>
     </Flex>
   );
