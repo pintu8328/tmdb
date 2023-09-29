@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+# Movie Application Documentation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
 
-## Available Scripts
+1. [Introduction](#introduction)
+2. [Getting Started](#getting-started)
+    - [Installation](#installation)
+    - [Available Scripts](#available-scripts)
+3. [Project Structure](#project-structure)
+4. [Components](#components)
+    - [Home](#home)
+    - [MovieDetail](#moviedetail)
+    - [SearchInput](#searchinput)
+    - [EmptySearch](#emptysearch)
+5. [State Management](#state-management)
+    - [Redux](#redux)
+6. [Styling](#styling)
+    - [Chakra UI](#chakra-ui)
+7. [Testing](#testing)
+    - [Jest and Testing Library](#jest-and-testing-library)
+8. [Dependencies](#dependencies)
+9. [License](#license)
 
-In the project directory, you can run:
+## Introduction
 
-### `npm start`
+This documentation provides an overview of the Movie Application, including how to set up the project, an explanation of key components, details on state management, styling, testing, and more.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Getting Started
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Installation
 
-### `npm test`
+To install the project dependencies, use the following command:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm install
+```
 
-### `npm run build`
+### Available Scripts
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- `npm start`: Starts the development server.
+- `npm build`: Builds the production-ready application.
+- `npm test`: Runs tests using Jest.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Project Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The project follows a standard structure for a Create React App. Key directories include:
 
-### `npm run eject`
+- **`src/`**: Contains the source code.
+- **`__tests__/`**: Holds test files.
+- **`public/`**: Public assets and HTML template.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Components
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Home
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The `Home` component is the main view of the application, responsible for fetching popular movies, handling search functionality, and displaying a grid of movie posters.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### MovieDetail
 
-## Learn More
+The `MovieDetail` component provides detailed information about a specific movie, including release date, overview, and associated videos.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### SearchInput
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The `SearchInput` component renders a search input field with an icon, allowing users to search for movies.
 
-### Code Splitting
+### EmptySearch
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The `EmptySearch` component is displayed when a search yields no results, suggesting alternative search terms.
 
-### Analyzing the Bundle Size
+## State Management
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Redux
 
-### Making a Progressive Web App
+The application uses Redux for state management. Key actions include fetching movies and movie details, setting and clearing the search keyword.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Styling
 
-### Advanced Configuration
+### Chakra UI
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Chakra UI is employed for styling components, providing a consistent and responsive design.
 
-### Deployment
+## Testing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Jest and Testing Library
 
-### `npm run build` fails to minify
+The project uses Jest as the testing framework, along with Testing Library for React components. Test files are located in the `__tests__` directory.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Dependencies
+
+Key dependencies include Chakra UI, Redux, Axios for API requests, React Router for navigation, and Jest for testing.
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+Feel free to customize this documentation based on your specific project details, including more in-depth explanations, API documentation, and any additional features or libraries you've implemented.
